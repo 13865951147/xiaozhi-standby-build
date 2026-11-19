@@ -45,7 +45,7 @@ jobs:
         shell: bash
         run: |
           source "$IDF_PATH/export.sh"
-          python scripts/build.py chd-esp32s3-eye --name chd-esp32s3-eye
+          python scripts/build.py chd/chd-esp32s3-eye --name chd-esp32s3-eye
 
       - name: Upload firmware
         uses: actions/upload-artifact@v4
