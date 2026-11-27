@@ -37,9 +37,9 @@ jobs:
       - name: Enable fixed dashboard fonts
         run: |
           cat >> sdkconfig.defaults <<'EOF'
-CONFIG_LV_FONT_MONTSERRAT_14=y
-CONFIG_LV_FONT_MONTSERRAT_28=y
-EOF
+          CONFIG_LV_FONT_MONTSERRAT_14=y
+          CONFIG_LV_FONT_MONTSERRAT_28=y
+          EOF
           tail -5 sdkconfig.defaults
 
       - name: Apply car-companion patch
